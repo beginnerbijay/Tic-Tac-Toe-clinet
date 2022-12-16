@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#root {
+  padding: 1rem;
+  height: 100vh;
+  background-color: #000;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.header{
+  color: #fff;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  width: 20rem !important;
+  padding: 7px 20px;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+.btn{
+  padding: 7px 20px;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+main {
+  flex: 1;
+  display: grid;
+  place-content: center;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #fff;
+  gap: 0.5rem;
+}
+.cell {
+  height: 150px;
+  width: 150px;
+  background: #000;
+  color: #fff;
+  font-size: 4rem;
+  display: grid;
+  place-content: center;
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .cell {
+    height: 100px;
+    width: 100px;
+  }
+}
