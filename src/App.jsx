@@ -8,7 +8,7 @@ import Game from './pages/Game';
 import Home from './pages/Home';
 
 function App() {
-  const socket = io('http://localhost:5000')
+  const socket = io('https://tic-tac-toe-api-yjgs.onrender.com')
   const [roomid, setroomid] = useState('')
   const [name, setname] = useState('')
   return (
